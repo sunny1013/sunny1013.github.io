@@ -21,7 +21,7 @@
             border-radius: 20px;
             box-shadow: 0 10px 25px rgba(0,0,0,0.1);
             max-width: 90%;
-            width: 400px;
+            width: 480px; /* A4 이미지가 잘 보이도록 너비를 조금 늘렸습니다 */
         }
         h1 {
             color: #2563eb;
@@ -32,24 +32,29 @@
             color: #4b5563;
             font-size: 16px;
             line-height: 1.6;
+            margin-bottom: 20px;
         }
-        /* QR코드 스타일 추가 */
-        .qr-box {
-            margin: 30px 0;
-            padding: 15px;
-            background: #f8fafc;
+        
+        /* 브로셔 영역 스타일 */
+        .brochure-box {
+            margin: 20px 0;
+            padding: 10px;
+            background: #eef2f6; /* 이미지가 돋보이게 하는 연한 배경 */
             border-radius: 10px;
-            border: 1px dashed #cbd5e1;
         }
-        .qr-img {
-            width: 150px;
-            height: 150px;
+        
+        .brochure-img {
+            width: 100%; /* 컨테이너 너비에 맞춤 */
+            height: auto; /* 비율 유지 (A4 비율 자동 적용) */
             display: block;
-            margin: 0 auto 10px auto;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.15); /* 종이 같은 그림자 효과 */
         }
+
         .caption {
             font-size: 13px;
             color: #64748b;
+            margin-top: 10px;
         }
     </style>
 </head>
@@ -58,13 +63,14 @@
     <div class="container">
         <h1>📚 스쿨레 생각키우기</h1>
         <p>현재 <strong>홈페이지 제작 중</strong>입니다.<br>
-        더 알찬 독서논술 자료로 찾아뵙겠습니다.</p>
+        자세한 프로그램 내용은 아래 안내문을 참고해주세요.</p>
         
-        <div class="qr-box">
-            <img src="독서토론논술_책놀이_스쿨레큐알.jpg" alt="스쿨레독서토론논술" class="qr-img">
-            <span class="caption">📷 카메라로 찍어서 공유해 보세요!</span>
+        <div class="brochure-box">
+            <img src="독서토론논술_책놀이_스쿨레큐알.jpg" alt="스쿨레 생각키우기 안내문" class="brochure-img">
         </div>
-        <p style="font-size: 14px; color: #9ca3af; margin-top: 20px;">
+
+
+        <p style="font-size: 14px; color: #9ca3af; margin-top: 30px;">
             Coming Soon
         </p>
     </div>
